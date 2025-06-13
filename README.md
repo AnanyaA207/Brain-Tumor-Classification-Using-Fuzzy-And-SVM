@@ -60,4 +60,36 @@ Brain tumors are complex and vary in size, shape, and texture—making manual de
 
 ---
 
+## 📊 Outputs
+
+## 🔍 Preprocessed MRI using Fuzzy Logic
+
+Brain tumor boundaries are often blurred or vague in raw scans, making them tough to classify accurately.
+
+Fuzzification assigns pixel intensities a membership value between 0 and 1, handling the ambiguity in a smart way. This step improves contrast and highlights potential tumor regions more clearly.
+
+![Screenshot 2025-06-13 222348](https://github.com/user-attachments/assets/6cbd19c6-f247-4129-892f-150fef00dd0f)
+
+![Screenshot 2025-06-13 222505](https://github.com/user-attachments/assets/9295dbb5-86e1-43e0-a93c-c0c0efb6e372)
+
+*The fuzzified MRI image showing enhanced boundary clarity. This processed image is used as input to the SVM classifier.*
+
+---
+
+## 🧠 Classification Results using Fuzzy + SVM
+
+Once the MRI images are preprocessed with fuzzy logic, we pass them to a **Support Vector Machine (SVM)** for classification.
+
+SVM is a powerful supervised learning model that works well with small, high-dimensional datasets—making it a great fit for medical imaging.
+
+We used the **RBF (Radial Basis Function) kernel** and tested several defuzzification methods. The best results were obtained using the **Center of Gravity (COG)** method.
+
+![Screenshot 2025-06-13 222547](https://github.com/user-attachments/assets/16cddd5f-af75-4eb1-8328-c13dadda36fb)
+
+![Screenshot 2025-06-13 222614](https://github.com/user-attachments/assets/9f854a2d-2abb-415c-92e4-fe96e1bef00b)
+
+
+By combining fuzzy logic and SVM, we created a lightweight yet accurate pipeline for brain tumor detection using MRI images—balancing interpretability, performance, and speed.
+
+
 
