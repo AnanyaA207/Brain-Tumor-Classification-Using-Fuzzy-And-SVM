@@ -94,9 +94,20 @@ By combining fuzzy logic and SVM, we created a lightweight yet accurate pipeline
 
 ---
 
-Install using:
-```bash
-pip install opencv-python numpy scikit-fuzzy matplotlib scikit-learn
+## 🔮 Future Enhancements
+
+- Implement CNN-based classification for deeper feature learning
+- Expand dataset with real-world MRI images
+- Build a GUI/web interface for easy use in clinical settings
+- Compare SVM performance with newer ML models (Random Forest, XGBoost, etc.)
+
+---
+
+## 🤝 Let's Connect  
+Always up for ideas or feedback!
+
+
+
 
 
 
