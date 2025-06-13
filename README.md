@@ -1,6 +1,6 @@
 # 🧠 Brain Tumor Classification using Fuzzy Logic & SVM
 
-A machine learning project that enhances MRI-based brain tumor classification by combining **fuzzy logic** (for uncertainty handling) and **Support Vector Machines (SVM)** (for robust classification). This hybrid approach improves detection accuracy, even with small datasets.
+A machine learning project that enhances MRI-based brain tumor classification by combining **fuzzy logic** (for uncertainty handling) and **Support Vector Machines (SVM)**. This hybrid approach improves detection accuracy, even with small datasets.
 
 ---
 
