@@ -82,7 +82,8 @@ Once the MRI images are preprocessed with fuzzy logic, we pass them to a **Suppo
 
 SVM is a powerful supervised learning model that works well with small, high-dimensional datasets—making it a great fit for medical imaging.
 
-We used the **RBF (Radial Basis Function) kernel** and tested several defuzzification methods. The best results were obtained using the **Center of Gravity (COG)** method.
+SVM classification was used to distinguish between tumor and non-tumor images after fuzzy preprocessing.
+The best results were obtained using the Center of Gravity (COG) method for defuzzification.
 
 ![Screenshot 2025-06-13 222547](https://github.com/user-attachments/assets/16cddd5f-af75-4eb1-8328-c13dadda36fb)
 
@@ -90,6 +91,14 @@ We used the **RBF (Radial Basis Function) kernel** and tested several defuzzific
 
 
 By combining fuzzy logic and SVM, we created a lightweight yet accurate pipeline for brain tumor detection using MRI images—balancing interpretability, performance, and speed.
+
+---
+
+Install using:
+```bash
+pip install opencv-python numpy scikit-fuzzy matplotlib scikit-learn
+
+
 
 
 
